@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'nunito-bold';
+	src: url('fonts/nunito/Nunito-Bold.eot');
+	src: local('☺'), url('fonts/nunito/Nunito-Bold.woff') format('woff'), url('fonts/nunito/Nunito-Bold.ttf') format('truetype'), url('fonts/nunito/Nunito-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'nunito-regular';
+	src: url('fonts/nunito/Nunito-Regular.eot');
+	src: local('☺'), url('fonts/nunito/Nunito-Regular.woff') format('woff'), url('fonts/nunito/Nunito-Regular.ttf') format('truetype'), url('fonts/nunito/Nunito-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppins-regular';
+	src: url('fonts/poppins/Poppins-Regular.eot');
+	src: local('☺'), url('fonts/poppins/Poppins-Regular.woff') format('woff'), url('fonts/poppins/Poppins-Regular.ttf') format('truetype'), url('fonts/poppins/Poppins-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'poppins-bold';
+	src: url('fonts/poppins/Poppins-Bold.eot');
+	src: local('☺'), url('fonts/poppins/Poppins-Bold.woff') format('woff'), url('fonts/poppins/Poppins-Bold.ttf') format('truetype'), url('fonts/poppins/Poppins-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+:root {
+    --font-title : '';
+}
+.d-flex {display: flex; justify-content: space-between;}
+li {list-style: none;}
+a {text-decoration: none;}
+
+/* début classe container  */
+.container {max-width: 1220px;}
+.accueil {max-width: 1220px;margin: auto;font-family: 'nunito-regular';font-size: 22px;color: #707070;}
+
+/* fin classe container  */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'nunito-bold';
+    font-size: 60px;
+    text-transform: uppercase;
+    max-width: 1350px;
+    margin: auto;
+    color: #707070;
+}
+h1::after {
+    content: url('images/logo-marne.png');
+    margin-left: 100px;
+}
+nav ul {width: 45%;max-width: 1350px; margin: 50px auto;}
+nav li {
+    font-family: 'nunito-regular';
+    font-size: 30px;
+    color: #707070;
+
+}
+h2 {
+    font-family: 'poppins-bold';
+    font-size: 50px;
+    color: #707070;
+}
+
+/* début story */
+.story aside {
+    float: right;
+    width: 16%;
+}
+aside a {
+    color: #707070;
+    font-family: 'poppins-regular';
+    font-size: 15px;
+}
+.story a::before {
+    content: url('images/accueil/news.png');
+}
+.story-text{
+    width: 55%;
+    line-height: 33px;
+}
+/* fin story */
